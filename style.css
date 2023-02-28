@@ -57,13 +57,16 @@ nav ul li a {
   opacity: 0;
   animation-delay: calc(0.2s * var(--clr));
 }
+nav ul li a:hover {
+  color: darkorange;
+}
 nav ul li a::after {
   content: "";
   width: 0;
   position: absolute;
   left: 0;
   bottom: -6px;
-  border-bottom: 2px solid darkorange;
+  border-bottom: 2px solid #fff;
   transition: 0.5s;
 }
 nav ul li a:hover::after {
@@ -110,6 +113,7 @@ nav ul li a:hover::after {
   font-size: 16px;
   line-height: 1.5;
 }
+
 .home-section .social-media a {
   display: inline-block;
   width: 42px;
@@ -123,6 +127,9 @@ nav ul li a:hover::after {
   margin: 60px 15px 30px 0;
   transition: 0.5s ease;
   font-size: 37px;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--vlr));
+  opacity: 0;
 }
 .social-media a:hover {
   background: darkorange;
@@ -184,6 +191,17 @@ nav ul li a:hover::after {
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
