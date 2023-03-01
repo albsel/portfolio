@@ -2,4 +2,8 @@
   .contact-section {
     grid-template-columns: 1fr;
   }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
 }

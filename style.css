@@ -39,7 +39,7 @@ nav {
   opacity: 0;
 }
 .logo-text {
-  color: darkorange;
+  color: #ff004f;
 }
 nav ul li {
   display: inline-block;
@@ -59,7 +59,7 @@ nav ul li a {
   transition: 0.5s ease;
 }
 nav ul li a:hover {
-  color: darkorange;
+  color: #ff004f;
 }
 nav ul li a::after {
   content: "";
@@ -123,7 +123,7 @@ nav ul li a:hover::after {
   animation-delay: 1s;
 }
 .home-details span {
-  color: darkorange;
+  color: #ff004f;
 }
 .home-details h1 {
   font-size: 56px;
@@ -173,6 +173,19 @@ nav ul li a:hover::after {
 }
 .about-col-1 {
   margin-right: 120px;
+  position: relative;
+}
+.about-col-1 h1 {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  font-size: 32px;
+  letter-spacing: 12px;
+  font-weight: 700;
+  padding: 10px;
+  padding-bottom: 20px;
+  transform: rotate(-36deg);
+  box-shadow: 0 5px 5px rgba(236, 56, 56, 0.3);
 }
 .grid {
   width: 100%;
@@ -272,7 +285,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 h1 {
-  border: 2px solid rgba(255, 165, 0, 0.5); /* orange border with 50% transparency */
+  border: 2px solid #740e2e;
   border-radius: 10px;
   font-size: 24px;
   padding: 12px;
@@ -306,7 +319,7 @@ nav ul li a:hover::after {
   position: absolute;
   left: 0;
   bottom: -6px;
-  border-bottom: 2px solid darkorange;
+  border-bottom: 2px solid #ff004f;
   transition: 0.5s;
 }
 .tab-links:hover::after {
@@ -325,7 +338,7 @@ nav ul li a:hover::after {
 }
 .tab-contents ul li span {
   font-size: 14px;
-  color: darkorange;
+  color: #b54769;
 }
 .tab-contents.active-tab {
   display: block;
@@ -364,7 +377,7 @@ nav ul li a:hover::after {
   margin-top: 30px;
 }
 .contact-left p i {
-  color: darkorange;
+  color: #ff004f;
   font-size: 25px;
 }
 .social-media a {
@@ -384,12 +397,12 @@ nav ul li a:hover::after {
 }
 .social-media a:hover {
   color: #252020;
-  box-shadow: 0 0 20px darkorange;
+  box-shadow: 0 0 20px #ff004f;
 }
 .btn {
   display: inline-block;
   padding: 12px 28px;
-  background: darkorange;
+  background: #ff004f;
   color: #252020;
   text-decoration: none;
   border: none;
@@ -405,8 +418,8 @@ nav ul li a:hover::after {
 }
 .btn:hover {
   background: #252020;
-  color: darkorange;
-  box-shadow: inset 0 0 0 1px darkorange;
+  color: #ff004f;
+  box-shadow: inset 0 0 0 1px #ff004f;
 }
 .contact-right form {
   width: 100%;
