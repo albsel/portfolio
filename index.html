@@ -13,7 +13,9 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <!-- ////////////////////////////////////////////////////////////////// -->
     <!-- <<<<<<<<<<< HEADER >>>>>>>>>>>>>  -->
+    <!-- ////////////////////////////////////////////////////////////////// -->
     <header class="header">
       <div class="container">
         <nav>
@@ -32,7 +34,9 @@
     </header>
 
     <main>
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< HOME SECTION >>>>>>>>>>>>>  -->
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <section class="home-section">
         <div class="home-details">
           <h3>Hey, My name is</h3>
@@ -50,10 +54,155 @@
         </div>
       </section>
 
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< ABOUT SECTION >>>>>>>>>>>>>  -->
-      <section class="about"></section>
+      <!-- ////////////////////////////////////////////////////////////////// -->
+      <section class="about-section">
+        <div class="about-col-1">
+          <div class="grid image-grid">
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link">
+                  <img
+                    class="tile-img tile-img1"
+                    src="images/omnifood.png"
+                    alt="Image"
+                  />
+                </a>
+              </div>
+            </div>
 
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link">
+                  <img
+                    class="tile-img tile-img2"
+                    src="images/hero.png"
+                    alt="Image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link">
+                  <img
+                    class="tile-img tile-img3"
+                    src="images/forkify.png"
+                    alt="Image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link">
+                  <img
+                    class="tile-img tile-img4"
+                    src="images/mapty.png"
+                    alt="Image"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link">
+                  <img
+                    class="tile-img tile-img5"
+                    src="images/bankist.png"
+                    alt="Image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="about-gallery">
+            <figure class="gallery-item">
+              <img src="images/omnifood.png" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/hero.png" alt="" />
+            </figure>
+          </div> -->
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            vel aperiam consequuntur facilis odit delectus pariatur reiciendis
+            provident recusandae natus nobis doloribus veniam quaerat explicabo
+            dolor sint sunt voluptates? Qui.
+          </p>
+          <div class="tab-titles">
+            <div
+              class="tab-links active-link"
+              style="--clr: 6"
+              onclick="openTab('skills')"
+            >
+              Skills
+            </div>
+            <div
+              class="tab-links"
+              style="--clr: 7"
+              onclick="openTab('eksperience')"
+            >
+              Eksperience
+            </div>
+            <div
+              class="tab-links"
+              style="--clr: 8"
+              onclick="openTab('education')"
+            >
+              Education
+            </div>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+              <li>
+                <span>Web Development</span><br />Designing Web/App interfaces
+              </li>
+              <li>
+                <span>App Development</span><br />Designing Web/App interfaces
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="eksperience">
+            <ul>
+              <li>
+                <span>2021-2022</span><br />Fullstack Developer at Mediacologne
+                GmbH
+              </li>
+              <li>
+                <span>2021-<span class="year">2023</span></span
+                ><br />Freelancer: Web Application, Responsive Websites,
+                Portfolio, E-Commerce Web/Applications
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2020-2022</span><br />Training at WBS Academy, certified
+                from IHK (Chamber of Commerce and Industry) Cologne, Germany
+              </li>
+              <li>
+                <span>2021-2022</span><br />Intership at Mediacologne GmbH as
+                Software Developer
+              </li>
+              <li>
+                <span>2020-2023</span><br />Training at ZeroToMaster Academy as
+                Frontend Developer
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< CONTACT >>>>>>>>>>>>>  -->
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <section class="contact-section">
         <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
@@ -96,7 +245,9 @@
         </div>
       </section>
 
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< FOOTER SECTION >>>>>>>>>>>>>  -->
+      <!-- ////////////////////////////////////////////////////////////////// -->
       <footer class="footer-section">
         <div class="copyright">
           <p>
@@ -106,5 +257,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
