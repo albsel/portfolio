@@ -83,10 +83,11 @@ nav ul li a:hover::after {
   justify-content: space-between;
   align-items: center;
   padding: 70px 10% 0;
-  margin-top: -58px;
+  margin-bottom: 90px;
 }
 .home-section .home-details {
   max-width: 600px;
+  margin-top: -58px;
 }
 .home-details h3 {
   font-size: 32px;
@@ -113,10 +114,10 @@ nav ul li a:hover::after {
   font-size: 16px;
   line-height: 1.5;
 }
-
 .profile-image img {
   max-width: 500px;
   height: 600px;
+  margin-top: -58px;
   border-radius: 25px;
 }
 @keyframes slideRight {
@@ -129,7 +130,6 @@ nav ul li a:hover::after {
     opacity: 1;
   }
 }
-
 @keyframes slideTop {
   0% {
     transform: translateY(100px);
@@ -140,7 +140,6 @@ nav ul li a:hover::after {
     opacity: 1;
   }
 }
-
 @keyframes slideBottom {
   0% {
     transform: translateY(-100px);
@@ -151,7 +150,6 @@ nav ul li a:hover::after {
     opacity: 1;
   }
 }
-
 @keyframes slideLeft {
   0% {
     transform: translateX(100px);
@@ -164,11 +162,17 @@ nav ul li a:hover::after {
 }
 
 /* //////////////////////////////////////////////////////////////////  */
+/* >>>>>>>>>>>>>>> ABOUT SECTION <<<<<<<<<<<<<<<  */
+/* //////////////////////////////////////////////////////////////////  */
+
+/* //////////////////////////////////////////////////////////////////  */
 /* >>>>>>>>>>>>>>> CONTACT SECTION <<<<<<<<<<<<<<<  */
 /* //////////////////////////////////////////////////////////////////  */
-.contact {
-  display: flex;
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 10px 10%;
+  margin-bottom: 90px;
 }
 .contact-left {
   flex-basis: 35%;
