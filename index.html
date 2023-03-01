@@ -20,27 +20,36 @@
     <!-- ////////////////////////////////////////////////////////////////// -->
     <!-- <<<<<<<<<<< HEADER >>>>>>>>>>>>>  -->
     <!-- ////////////////////////////////////////////////////////////////// -->
-    <header class="header">
-      <div class="nav">
-        <nav>
-          <a href="#" class="logo"
-            ><span class="logo-text">My</span>Portfolio</a
-          >
-          <ul>
-            <li><a href="#" style="--clr: 1">Home</a></li>
-            <li><a href="#" style="--clr: 2">About/MyWork</a></li>
-            <li><a href="#" style="--clr: 3">Services</a></li>
-            <li><a href="#" style="--clr: 5">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header>
+      <nav>
+        <a href="#" class="logo"><span class="logo-text">My</span>Portfolio</a>
+        <ul class="main-nav-list">
+          <li>
+            <a class="nav__link" href="#section--1" style="--clr: 1">Home</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#section--2" style="--clr: 2"
+              >About/MyWork</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#section--3" style="--clr: 3"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#section--4" style="--clr: 5">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< HOME SECTION >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="home-section">
+
+      <section class="home-section" id="section--1">
         <div class="home-details">
           <h3>Hey, My name is</h3>
           <h1>Alban Selimi</h1>
@@ -60,7 +69,7 @@
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< ABOUT SECTION >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="about-section">
+      <section class="about-section" id="section--2">
         <div class="about-col-1">
           <h1>My Work</h1>
           <div class="grid image-grid">
@@ -210,7 +219,7 @@
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< SERVICES SECTION >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="services-section">
+      <section class="services-section" id="section--3">
         <h1 class="service-title">My Services</h1>
 
         <div class="services-lists">
@@ -252,7 +261,7 @@
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< CONTACT >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="contact-section">
+      <section class="contact-section" id="section--4">
         <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
           <address class="contacts">
@@ -276,7 +285,7 @@
           <a href="images/Lebenslauf.pdf" download class="btn"> Download CV</a>
         </div>
         <div class="contact-right">
-          <form>
+          <form class="fixed-form">
             <input type="text" name="name" placeholder="Your Name" required />
             <input
               type="email"

@@ -14,20 +14,18 @@ body {
 /* //////////////////////////////////////////////////////////////////  */
 /* >>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<  */
 /* //////////////////////////////////////////////////////////////////  */
-.header {
+header {
   width: 100%;
-  /* background-image: url(images/portfolio.jpg); */
+
   background-size: cover;
   background-position: center;
-}
-.nav {
-  padding: 10px 10%;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 10px 10%;
 }
 .logo {
   color: #fff;
@@ -135,12 +133,12 @@ nav ul li a:hover::after {
   font-size: 16px;
   line-height: 1.5;
 }
+
 .profile-image img {
-  max-width: 500px;
-  height: 500px;
-  margin-top: -58px;
+  width: 100%;
   border-radius: 25px;
 }
+
 @keyframes slideBottom {
   0% {
     transform: translateY(-100px);
@@ -177,8 +175,8 @@ nav ul li a:hover::after {
 }
 .about-col-1 h1 {
   position: absolute;
-  top: 5%;
-  left: -10%;
+  top: 10%;
+  left: -12%;
   font-size: 32px;
   letter-spacing: 12px;
   font-weight: 700;
@@ -363,7 +361,7 @@ nav ul li a:hover::after {
 }
 .service-title {
   margin-bottom: 25px;
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: 4px;
 }
 .services-lists {
@@ -452,7 +450,7 @@ nav ul li a:hover::after {
   display: inline-block;
   padding: 12px 28px;
   background: #ff004f;
-  color: #252020;
+  color: #fff;
   text-decoration: none;
   border: none;
   outline: none;

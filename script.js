@@ -29,3 +29,17 @@ const openTab = function (tabName) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabName).classList.add("active-tab");
 };
+
+/*********************************************************************************************************/
+/* SCROLL NAVIGATION PAGE */
+/*********************************************************************************************************/
+document
+  .querySelector(".main-nav-list")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (e.target.classList.contains("nav__link")) {
+      const id = e.target.getAttribute("href");
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
