@@ -37,7 +37,7 @@
   /* >>>>>>>>>>>>>>> HOME SECTION <<<<<<<<<<<<<<<  */
   /* //////////////////////////////////////////////////////////////////  */
   .home-section {
-    margin-bottom: 110px;
+    margin-bottom: 90px;
   }
   .home-section .home-details {
     margin-top: -58px;
@@ -70,7 +70,7 @@
   }
   .about-col-1 h1 {
     position: absolute;
-    top: -10%;
+    top: -7%;
     left: 0;
     right: 0;
     font-size: 28px;
@@ -79,7 +79,6 @@
     padding: 10px 20px;
     text-align: center;
     transform: rotate(0deg);
-    box-shadow: 0 5px 5px rgba(236, 56, 56, 0.3);
   }
   .tile-img {
     border-radius: 4px;
