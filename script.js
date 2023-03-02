@@ -93,6 +93,7 @@ form.addEventListener("submit", (e) => {
         msg.innerText = "";
       }, 2000);
       form.reset();
+      submitBtn.disabled = true;
     })
     .catch((error) => console.error("Error!", error.message));
 });
@@ -118,13 +119,13 @@ myForm.addEventListener("input", () => {
   }
 });
 
-// myForm.addEventListener("input", () => {
-//   if (myForm.checkValidity()) {
-//     submitBtn.disabled = false;
-//   } else {
-//     submitBtn.disabled = true;
-//   }
-// });
+myForm.addEventListener("input", () => {
+  if (myForm.checkValidity()) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
 
 /*********************************************************************************************************/
 /* Validation of name input field
