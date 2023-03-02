@@ -487,6 +487,20 @@ nav ul li a:hover::after {
   font-size: 12px;
   margin-top: -7px;
 }
+.phone-number {
+  display: flex;
+  align-items: center;
+}
+.bx-phone {
+  margin-right: 10px;
+}
+.email-adresse {
+  display: flex;
+  align-items: center;
+}
+.bx-send {
+  margin-right: 10px;
+}
 .contact-right form {
   width: 100%;
 }
