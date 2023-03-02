@@ -3,6 +3,7 @@
 ///////////////////////////////////////////////////////////
 const tabsLinks = document.getElementsByClassName("tab-links");
 const tabsContents = document.getElementsByClassName("tab-contents");
+const sideMenu = document.getElementById("side-menu");
 
 ///////////////////////////////////////////////////////////
 // Set current Year
@@ -43,3 +44,15 @@ document
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     }
   });
+
+/*********************************************************************************************************/
+/* Opening and closing the Menu */
+/*********************************************************************************************************/
+
+const openMenu = function () {
+  sideMenu.style.right = "0";
+};
+
+const closeMenu = function () {
+  sideMenu.style.right = "-230px";
+};

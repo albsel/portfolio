@@ -27,6 +27,9 @@ nav {
   flex-wrap: wrap;
   padding: 10px 10%;
 }
+nav .bx {
+  display: none;
+}
 .logo {
   color: #fff;
   text-decoration: none;
@@ -192,32 +195,30 @@ nav ul li a:hover::after {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .grid-block {
   width: 50%;
   min-height: 11.25rem;
   padding: 1rem;
 }
-
 .image-grid {
   -webkit-transform: rotateX(45deg) rotateZ(45deg);
   transform: rotateX(45deg) rotateZ(45deg);
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
-
+.tile-img {
+  border-radius: 4px;
+}
 .image-grid .tile-link:hover .tile-img {
   top: -1rem;
   left: -1rem;
 }
-
 .image-grid .tile-img {
   position: relative;
   top: 0;
@@ -228,15 +229,12 @@ nav ul li a:hover::after {
   transition: 1s;
   cursor: pointer;
 }
-
 .tile-link {
   display: block;
 }
-
 .tile-link:hover .tile-img {
   opacity: 1;
 }
-
 .tile-link:hover .tile-img-link {
   display: block;
 }
@@ -244,7 +242,6 @@ nav ul li a:hover::after {
 .tile-link:hover .tile-img-link:hover .tile-img {
   opacity: 0.5;
 }
-
 .tile-img {
   display: block;
   width: 100%;
@@ -282,7 +279,6 @@ nav ul li a:hover::after {
     10px 10px rgba(144, 238, 144, 0.3), 15px 15px rgba(144, 238, 144, 0.2),
     20px 20px rgba(144, 238, 144, 0.1), 25px 25px rgba(144, 238, 144, 0.05);
 }
-
 .about-col-2 h1 {
   border: 2px solid #740e2e;
   border-radius: 10px;
@@ -376,7 +372,6 @@ nav ul li a:hover::after {
   background: #473d3d;
   border-radius: 7px;
   padding: 40px;
-
   transition: ease-in-out 0.5s;
 }
 .services-list:hover {

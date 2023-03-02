@@ -23,7 +23,7 @@
     <header>
       <nav>
         <a href="#" class="logo"><span class="logo-text">My</span>Portfolio</a>
-        <ul class="main-nav-list">
+        <ul class="main-nav-list" id="side-menu">
           <li>
             <a class="nav__link" href="#section--1" style="--clr: 1">Home</a>
           </li>
@@ -40,7 +40,9 @@
           <li>
             <a class="nav__link" href="#section--4" style="--clr: 5">Contact</a>
           </li>
+          <i class="bx bx-window-close" onclick="closeMenu()"></i>
         </ul>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
       </nav>
     </header>
 
@@ -133,14 +135,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="about-gallery">
-            <figure class="gallery-item">
-              <img src="images/omnifood.png" alt="" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="images/hero.png" alt="" />
-            </figure>
-          </div> -->
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
@@ -278,9 +272,9 @@
             </p>
           </address>
           <div class="social-media">
-            <a href="#"><i style="--vlr: 6" class="bx bxl-linkedin"></i></a>
-            <a href="#"><i style="--vlr: 7" class="bx bxl-facebook"></i></a>
-            <a href="#"><i style="--vlr: 8" class="bx bxl-instagram"></i></a>
+            <a href=""><i style="--vlr: 6" class="bx bxl-linkedin"></i></a>
+            <a href=""><i style="--vlr: 7" class="bx bxl-facebook"></i></a>
+            <a href=""><i style="--vlr: 8" class="bx bxl-instagram"></i></a>
           </div>
           <a href="images/Lebenslauf.pdf" download class="btn"> Download CV</a>
         </div>
