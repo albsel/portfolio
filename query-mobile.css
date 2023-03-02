@@ -37,7 +37,7 @@
   /* >>>>>>>>>>>>>>> HOME SECTION <<<<<<<<<<<<<<<  */
   /* //////////////////////////////////////////////////////////////////  */
   .home-section {
-    margin-bottom: 90px;
+    margin-bottom: 0;
   }
   .home-section .home-details {
     margin-top: -58px;
@@ -64,6 +64,7 @@
     grid-template-columns: 1fr;
     margin-bottom: 30px;
     padding: 25px;
+    padding-top: 70px;
   }
   .about-col-1 {
     margin-right: 5px;
