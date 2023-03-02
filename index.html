@@ -311,8 +311,11 @@
               name="name"
               id="name"
               placeholder="Your Name"
+              minlength="3"
+              maxlength="20"
               required
             />
+            <span id="nameError"></span>
             <input
               type="email"
               name="email"
@@ -320,12 +323,18 @@
               placeholder="Your Email"
               required
             />
+            <span id="emailError"></span>
             <textarea
               name="message"
               rows="6"
               id="message"
               placeholder="Your Message"
+              required
             ></textarea>
+            <div id="the-count">
+              <span id="current">0</span>
+              <span id="maximum">/ 300</span>
+            </div>
             <button type="submit" class="btn btn-submit" disabled id="btn">
               Submit
             </button>

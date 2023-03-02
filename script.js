@@ -7,7 +7,22 @@ const sideMenu = document.getElementById("side-menu");
 const msg = document.getElementById("msg");
 const submitBtn = document.getElementById("btn");
 const myForm = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const nameErrorMsg = document.getElementById("nameError");
+const emailInput = document.getElementById("email");
+const emailError = document.getElementById("emailError");
+const messageInput = document.getElementById("message");
 
+/*********************************************************************************************************/
+/* Validation of textarea input field
+/*********************************************************************************************************/
+messageInput.addEventListener("input", () => {
+  const words = messageInput.value.trim().split(/\s+/);
+  if (words.length > 100) {
+    messageInput.value = words.slice(0, 100).join(" ");
+    messageInput.dispatchEvent(new Event("input"));
+  }
+});
 ///////////////////////////////////////////////////////////
 // Set current Year
 ///////////////////////////////////////////////////////////
@@ -82,15 +97,105 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message));
 });
 
+/*********************************************************************************************************/
+/* Change name of button while sending the data
+/*********************************************************************************************************/
 const sendMsg = function () {
   submitBtn.innerText = "Sending..";
 };
 submitBtn.addEventListener("click", sendMsg);
 
+/*********************************************************************************************************/
+/* Disable button until the form is filled
+/*********************************************************************************************************/
 myForm.addEventListener("input", () => {
   if (myForm.checkValidity()) {
     submitBtn.disabled = false;
+    submitBtn.classList.remove("disabled");
   } else {
     submitBtn.disabled = true;
+    submitBtn.classList.add("disabled");
+  }
+});
+
+// myForm.addEventListener("input", () => {
+//   if (myForm.checkValidity()) {
+//     submitBtn.disabled = false;
+//   } else {
+//     submitBtn.disabled = true;
+//   }
+// });
+
+/*********************************************************************************************************/
+/* Validation of name input field
+/*********************************************************************************************************/
+nameInput.addEventListener("input", () => {
+  const name = nameInput.value;
+  if (name.length < 3) {
+    nameErrorMsg.textContent = "Name must be at least 3 characters long.";
+  } else if (name.length > 20) {
+    nameErrorMsg.textContent = "Name must be no more than 20 characters long.";
+  } else {
+    nameErrorMsg.textContent = "";
+  }
+});
+
+/*********************************************************************************************************/
+/* Validation of email input field
+/*********************************************************************************************************/
+emailInput.addEventListener("input", () => {
+  const email = emailInput.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    emailError.textContent = "Invalid email format.";
+  } else {
+    emailError.textContent = "";
+  }
+});
+
+/*********************************************************************************************************/
+/* Validation of textarea input field
+/*********************************************************************************************************/
+messageInput.addEventListener("input", function () {
+  let characterCount = this.value.length;
+  let current = document.querySelector("#current");
+  let maximum = document.querySelector("#maximum");
+  let theCount = document.querySelector("#the-count");
+
+  current.textContent = characterCount;
+
+  if (characterCount < 70) {
+    current.style.color = "#666";
+  }
+  if (characterCount > 70 && characterCount < 99) {
+    current.style.color = "#6d5555";
+  }
+  if (characterCount > 99 && characterCount < 130) {
+    current.style.color = "#6d5555";
+  }
+  if (characterCount > 130 && characterCount < 170) {
+    current.style.color = "#793535";
+  }
+  if (characterCount > 170 && characterCount < 200) {
+    current.style.color = "#793535";
+  }
+
+  if (characterCount >= 200 && characterCount <= 300) {
+    maximum.style.color = "#793535";
+    current.style.color = "#793535";
+
+    theCount.style.fontWeight = "normal";
+    if (characterCount > 200 && characterCount < 300) {
+      maximum.style.color = "#8f0001";
+      current.style.color = "#8f0001";
+    }
+  } else if (characterCount > 300) {
+    maximum.style.color = "#8f0001";
+    current.style.color = "#8f0001";
+    theCount.style.fontWeight = "bold";
+    this.value = this.value.substring(0, 295); // restrict user from typing more than 300 characters
+  } else {
+    maximum.style.color = "#666";
+    theCount.style.fontWeight = "normal";
   }
 });
