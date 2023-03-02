@@ -4,6 +4,8 @@
 const tabsLinks = document.getElementsByClassName("tab-links");
 const tabsContents = document.getElementsByClassName("tab-contents");
 const sideMenu = document.getElementById("side-menu");
+const msg = document.getElementById("msg");
+const submitBtn = document.getElementById("btn");
 
 ///////////////////////////////////////////////////////////
 // Set current Year
@@ -56,3 +58,30 @@ const openMenu = function () {
 const closeMenu = function () {
   sideMenu.style.right = "-230px";
 };
+
+/*********************************************************************************************************/
+/* Input web app URL for contact form*/
+/*********************************************************************************************************/
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbybYXCErqGYxuKGBqQ3zgmkKbZZU1lsQHXHQE0hmGUBtY6B_Ju6CtWhEnbhDFsh-1ni/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerText = "Message was sent succesfully!";
+
+      setTimeout(function () {
+        submitBtn.innerHTML = "Submit";
+        msg.innerText = "";
+      }, 2000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+const sendMsg = function () {
+  submitBtn.innerText = "Sending..";
+};
+submitBtn.addEventListener("click", sendMsg);

@@ -486,6 +486,13 @@ form .btn-submit {
   cursor: pointer;
   border-radius: 5px;
 }
+#msg {
+  color: #61b752;
+  display: block;
+  margin-top: 18px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
 .contacts {
   font-size: 18px;
 }

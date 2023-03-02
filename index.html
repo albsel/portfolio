@@ -299,7 +299,7 @@
           <a href="images/Lebenslauf.pdf" download class="btn"> Download CV</a>
         </div>
         <div class="contact-right">
-          <form class="fixed-form">
+          <form class="fixed-form" name="submit-to-google-sheet">
             <input type="text" name="name" placeholder="Your Name" required />
             <input
               type="email"
@@ -312,8 +312,11 @@
               rows="6"
               placeholder="Your Message"
             ></textarea>
-            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="submit" class="btn btn-submit" id="btn">
+              Submit
+            </button>
           </form>
+          <span id="msg"></span>
         </div>
       </section>
 
