@@ -6,6 +6,7 @@ const tabsContents = document.getElementsByClassName("tab-contents");
 const sideMenu = document.getElementById("side-menu");
 const msg = document.getElementById("msg");
 const submitBtn = document.getElementById("btn");
+const myForm = document.getElementById("form");
 
 ///////////////////////////////////////////////////////////
 // Set current Year
@@ -85,3 +86,11 @@ const sendMsg = function () {
   submitBtn.innerText = "Sending..";
 };
 submitBtn.addEventListener("click", sendMsg);
+
+myForm.addEventListener("input", () => {
+  if (myForm.checkValidity()) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
