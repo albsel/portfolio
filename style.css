@@ -133,8 +133,9 @@ nav ul li a:hover::after {
   opacity: 0;
 }
 .home-details p {
-  font-size: 16px;
-  line-height: 1.5;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .profile-image img {
@@ -388,6 +389,18 @@ nav ul li a:hover::after {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 25px;
+}
+.design-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.design-text {
+  overflow: hidden;
+  height: 100px; /* set the height to half of the desired value */
+}
+
+.design-text.full-visible {
+  height: auto; /* remove the height limit */
 }
 .services-list a {
   text-decoration: none;

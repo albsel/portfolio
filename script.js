@@ -13,6 +13,22 @@ const emailInput = document.getElementById("email");
 const emailError = document.getElementById("emailError");
 const messageInput = document.getElementById("message");
 
+const learnMoreBtns = document.querySelectorAll(".learn-more");
+const servicesList = document.querySelector(".services-list");
+const servicesListParagraph = servicesList.querySelector(".design-text");
+
+/*********************************************************************************************************/
+/* Toggel the design text with learn more ancer tag
+/*********************************************************************************************************/
+learnMoreBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    const servicesList = btn.closest(".services-list");
+    const servicesListParagraph = servicesList.querySelector(".design-text");
+
+    servicesListParagraph.classList.toggle("full-visible");
+    btn.style.display = "none";
+  });
+});
 /*********************************************************************************************************/
 /* Validation of textarea input field
 /*********************************************************************************************************/
