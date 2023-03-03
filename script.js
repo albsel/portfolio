@@ -134,6 +134,7 @@ form.addEventListener("submit", (e) => {
       }, 2000);
       form.reset();
       submitBtn.disabled = true;
+      current.innerText = "0";
     })
     .catch((error) => console.error("Error!", error.message));
 });
@@ -205,38 +206,22 @@ messageInput.addEventListener("input", function () {
 
   current.textContent = characterCount;
 
-  if (characterCount < 70) {
+  if (characterCount < 100) {
     current.style.color = "#666";
-  }
-  if (characterCount > 70 && characterCount < 99) {
-    current.style.color = "#6d5555";
-  }
-  if (characterCount > 99 && characterCount < 130) {
-    current.style.color = "#6d5555";
-  }
-  if (characterCount > 130 && characterCount < 170) {
-    current.style.color = "#793535";
-  }
-  if (characterCount > 170 && characterCount < 200) {
-    current.style.color = "#793535";
-  }
-
-  if (characterCount >= 200 && characterCount <= 300) {
-    maximum.style.color = "#793535";
-    current.style.color = "#793535";
-
-    theCount.style.fontWeight = "normal";
-    if (characterCount > 200 && characterCount < 300) {
-      maximum.style.color = "#8f0001";
-      current.style.color = "#8f0001";
-    }
-  } else if (characterCount > 300) {
-    maximum.style.color = "#8f0001";
-    current.style.color = "#8f0001";
-    theCount.style.fontWeight = "bold";
-    this.value = this.value.substring(0, 295); // restrict user from typing more than 300 characters
-  } else {
     maximum.style.color = "#666";
     theCount.style.fontWeight = "normal";
+  } else if (characterCount < 200) {
+    current.style.color = "#6d5555";
+    maximum.style.color = "#6d5555";
+    theCount.style.fontWeight = "normal";
+  } else if (characterCount < 300) {
+    current.style.color = "#793535";
+    maximum.style.color = "#793535";
+    theCount.style.fontWeight = "normal";
+  } else {
+    current.style.color = "#8f0001";
+    maximum.style.color = "#8f0001";
+    theCount.style.fontWeight = "bold";
+    messageInput.value = messageInput.value.substring(0, 300); // restrict user from typing more than 300 characters
   }
 });

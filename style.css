@@ -134,7 +134,7 @@ nav ul li a:hover::after {
 }
 .home-details p {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -175,8 +175,9 @@ nav ul li a:hover::after {
   padding: 10px 10%;
 }
 .about-col-1 {
-  margin-right: 120px;
+  margin-right: 140px;
   position: relative;
+  margin-top: 70px;
 }
 .about-col-1 h1 {
   position: absolute;
@@ -290,7 +291,7 @@ nav ul li a:hover::after {
 }
 .about-col-2 P {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.7;
   margin-top: 20px;
 }
 .tab-titles {
@@ -301,6 +302,7 @@ nav ul li a:hover::after {
 .tab-links {
   font-size: 16px;
   font-weight: 600;
+  margin-top: 10px;
   position: relative;
   cursor: pointer;
   letter-spacing: 2px;
@@ -331,9 +333,10 @@ nav ul li a:hover::after {
   list-style: none;
   margin: 10px 0;
   font-size: 16px;
+  line-height: 1.5;
 }
 .tab-contents ul li span {
-  font-size: 14px;
+  font-size: 16px;
   color: #b54769;
 }
 .tab-contents.active-tab {
@@ -391,7 +394,7 @@ nav ul li a:hover::after {
   margin-bottom: 25px;
 }
 .service-text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
   overflow: hidden;
   height: 150px;
