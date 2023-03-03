@@ -248,3 +248,10 @@ scrollUpButton.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+/*********************************************************************************************************/
+/* Scroll position on TOP on page refresh
+/*********************************************************************************************************/
+window.onload = function () {
+  window.scrollTo(0, 0);
+};

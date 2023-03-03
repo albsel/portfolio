@@ -584,6 +584,7 @@ textarea {
   bottom: 80px;
   font-size: 44px;
   color: #ff004f;
+  z-index: 99;
 }
 
 .tooltip {
