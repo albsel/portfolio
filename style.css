@@ -357,15 +357,15 @@ nav ul li a:hover::after {
   padding: 10px 10%;
   margin-bottom: 90px;
 }
-.service-title {
-  margin-bottom: 25px;
-  font-size: 26px;
-  letter-spacing: 4px;
-}
 .services-lists {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
+}
+.service-title {
+  margin-bottom: 25px;
+  font-size: 26px;
+  letter-spacing: 4px;
 }
 .services-list {
   width: 100%;
@@ -390,17 +390,14 @@ nav ul li a:hover::after {
   font-weight: 700;
   margin-bottom: 25px;
 }
-.design-text {
+.service-text {
   font-size: 18px;
   line-height: 1.7;
-}
-.design-text {
   overflow: hidden;
-  height: 100px; /* set the height to half of the desired value */
+  height: 150px;
 }
-
-.design-text.full-visible {
-  height: auto; /* remove the height limit */
+.service-text.full-visible {
+  height: auto;
 }
 .services-list a {
   text-decoration: none;

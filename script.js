@@ -15,20 +15,44 @@ const messageInput = document.getElementById("message");
 
 const learnMoreBtns = document.querySelectorAll(".learn-more");
 const servicesList = document.querySelector(".services-list");
-const servicesListParagraph = servicesList.querySelector(".design-text");
-
+const servicesListParagraph = servicesList.querySelector(".service-text");
+const closeBtn = document.querySelectorAll(".close");
+const closeBtns = document.querySelectorAll(".close-btn");
 /*********************************************************************************************************/
-/* Toggel the design text with learn more ancer tag
+/* Expand the service text
 /*********************************************************************************************************/
 learnMoreBtns.forEach(function (btn) {
   btn.addEventListener("click", function () {
     const servicesList = btn.closest(".services-list");
-    const servicesListParagraph = servicesList.querySelector(".design-text");
+    const servicesListParagraph = servicesList.querySelector(".service-text");
+    const closeBtn = servicesList.querySelector(".close-btn");
 
     servicesListParagraph.classList.toggle("full-visible");
     btn.style.display = "none";
+    closeBtn.style.display = "block";
   });
 });
+
+/*********************************************************************************************************/
+/* Close the service text
+/*********************************************************************************************************/
+closeBtns.forEach(function (closeBtn) {
+  closeBtn.addEventListener("click", function () {
+    const servicesList = closeBtn.closest(".services-list");
+    const servicesListParagraph = servicesList.querySelector(".service-text");
+    const learnMoreBtn = servicesList.querySelector(".learn-more");
+    const servicesListRect = servicesList.getBoundingClientRect();
+
+    servicesListParagraph.classList.remove("full-visible");
+    closeBtn.style.display = "none";
+    learnMoreBtn.style.display = "block";
+    window.scrollTo({
+      top: servicesListRect.top + window.pageYOffset,
+      behavior: "smooth",
+    });
+  });
+});
+
 /*********************************************************************************************************/
 /* Validation of textarea input field
 /*********************************************************************************************************/
