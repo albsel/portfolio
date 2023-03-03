@@ -578,13 +578,15 @@ textarea {
   min-height: 50px;
   max-height: 400px;
 }
+.scroll-up {
+  position: relative;
+}
 #scroll-up-button {
-  position: fixed;
-  right: 50px;
-  bottom: 80px;
+  position: absolute;
+  right: -80px;
+  bottom: 20px;
   font-size: 44px;
   color: #ff004f;
-  z-index: 99;
 }
 
 .tooltip {

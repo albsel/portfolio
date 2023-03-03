@@ -231,14 +231,8 @@ messageInput.addEventListener("input", function () {
 /* Scroll UP
 /*********************************************************************************************************/
 window.addEventListener("scroll", function () {
-  // Check if the user has scrolled to the bottom of the page
-  if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
-    // If the user has scrolled to the bottom, show the scroll-up button
-    scrollUpButton.style.display = "block";
-  } else {
-    // If the user hasn't scrolled to the bottom, hide the scroll-up button
-    scrollUpButton.style.display = "none";
-  }
+  // Always show the scroll-up button
+  scrollUpButton.style.display = "block";
 });
 
 scrollUpButton.addEventListener("click", function () {
