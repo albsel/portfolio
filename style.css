@@ -281,7 +281,7 @@ nav ul li a:hover::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
   padding: 10px 10%;
 }
 .about-description h1 {
@@ -421,7 +421,7 @@ nav ul li a:hover::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px 10%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .contact-left {
   flex-basis: 35%;
