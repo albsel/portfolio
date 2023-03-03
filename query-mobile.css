@@ -60,6 +60,9 @@
   /* //////////////////////////////////////////////////////////////////  */
   /* >>>>>>>>>>>>>>> MY-WORK SECTION <<<<<<<<<<<<<<<  */
   /* //////////////////////////////////////////////////////////////////  */
+  .my-work-section {
+    margin-bottom: 90px;
+  }
   .my-work-title h1 {
     position: absolute;
     top: -2.3%;
@@ -101,7 +104,6 @@
   .about-description {
     border-radius: 10px;
     font-size: 24px;
-    padding: 8px;
   }
   .about-description h1 {
     font-size: 26px;
@@ -117,6 +119,11 @@
     gap: 20px;
   }
   .tab-links {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-right: -3px;
+  }
+  .tab-contents ul li span {
     font-size: 14px;
   }
 
@@ -125,7 +132,7 @@
   /* //////////////////////////////////////////////////////////////////  */
   .services-section {
     padding: 10px 10%;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
   }
   .service-title {
     font-size: 26px;
@@ -135,6 +142,9 @@
   .services-lists {
     grid-template-columns: 1fr;
     row-gap: 25px;
+  }
+  .services-list h2 {
+    letter-spacing: 2px;
   }
 
   /* //////////////////////////////////////////////////////////////////  */
