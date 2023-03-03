@@ -458,7 +458,7 @@ nav ul li a:hover::after {
   color: #252020;
   box-shadow: 0 0 20px #ff004f;
 }
-.btn-cv {
+.btn {
   display: inline-block;
   padding: 12px 28px;
   background: #ff004f;
@@ -475,7 +475,7 @@ nav ul li a:hover::after {
   animation: slideTop 2s ease forwards;
   opacity: 0;
 }
-.btn-cv:hover {
+.btn:hover {
   background: #252020;
   color: #ff004f;
   box-shadow: inset 0 0 0 1px #ff004f;
