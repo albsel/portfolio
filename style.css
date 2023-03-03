@@ -421,7 +421,7 @@ nav ul li a:hover::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px 10%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .contact-left {
   flex-basis: 35%;
