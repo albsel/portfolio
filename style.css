@@ -387,6 +387,16 @@ nav ul li a:hover::after {
   cursor: pointer;
   background-color: #ff004f;
 }
+.services-list:hover .learn-more {
+  color: #252020;
+  font-weight: 700;
+  font-size: 14px;
+}
+.services-list:hover .close-btn {
+  color: #252020;
+  font-weight: 700;
+  font-size: 14px;
+}
 .services-list i {
   font-size: 48px;
   margin-bottom: 25px;
@@ -486,13 +496,11 @@ nav ul li a:hover::after {
   color: #ff004f;
   box-shadow: inset 0 0 0 1px #ff004f;
 }
-
 .btn:disabled {
   background-color: #720628;
   color: #ccc;
   cursor: default;
 }
-
 .btn.disabled:hover {
   background-color: #720628;
   color: #ccc;
