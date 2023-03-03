@@ -16,7 +16,6 @@ body {
 /* //////////////////////////////////////////////////////////////////  */
 header {
   width: 100%;
-
   background-size: cover;
   background-position: center;
 }
@@ -105,7 +104,7 @@ nav ul li a:hover::after {
   justify-content: space-between;
   align-items: center;
   padding: 70px 10% 0;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 }
 .home-section .home-details {
   max-width: 600px;
@@ -137,13 +136,11 @@ nav ul li a:hover::after {
   font-size: 16px;
   line-height: 1.7;
 }
-
 .profile-image img {
   width: 100%;
   max-width: 450px;
   border-radius: 25px;
 }
-
 @keyframes slideBottom {
   0% {
     transform: translateY(-100px);
@@ -166,27 +163,23 @@ nav ul li a:hover::after {
 }
 
 /* //////////////////////////////////////////////////////////////////  */
-/* >>>>>>>>>>>>>>> ABOUT SECTION <<<<<<<<<<<<<<<  */
+/* >>>>>>>>>>>>>>> MY-WORK SECTION <<<<<<<<<<<<<<<  */
 /* //////////////////////////////////////////////////////////////////  */
-.about-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 90px;
-  padding: 10px 10%;
-}
-.about-col-1 {
-  margin-right: 140px;
+.my-work-section {
+  margin-bottom: 40px;
+  padding-top: 50px;
   position: relative;
-  margin-top: 70px;
 }
-.about-col-1 h1 {
+.my-work-title h1 {
   position: absolute;
-  top: 10%;
-  left: -12%;
+  top: 12%;
+  left: 18%;
+  width: 300px;
   font-size: 32px;
   letter-spacing: 12px;
   font-weight: 700;
   padding: 10px;
+  text-align: center;
   padding-bottom: 20px;
   transform: rotate(-36deg);
   box-shadow: 0 5px 5px rgba(236, 56, 56, 0.3);
@@ -240,7 +233,6 @@ nav ul li a:hover::after {
 .tile-link:hover .tile-img-link {
   display: block;
 }
-
 .tile-link:hover .tile-img-link:hover .tile-img {
   opacity: 0.5;
 }
@@ -281,15 +273,27 @@ nav ul li a:hover::after {
     10px 10px rgba(144, 238, 144, 0.3), 15px 15px rgba(144, 238, 144, 0.2),
     20px 20px rgba(144, 238, 144, 0.1), 25px 25px rgba(144, 238, 144, 0.05);
 }
-.about-col-2 h1 {
+
+/* //////////////////////////////////////////////////////////////////  */
+/* >>>>>>>>>>>>>>> ABOUT SECTION <<<<<<<<<<<<<<<  */
+/* //////////////////////////////////////////////////////////////////  */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 120px;
+  padding: 10px 10%;
+}
+.about-description h1 {
   border: 2px solid #740e2e;
   border-radius: 10px;
   font-size: 24px;
   padding: 12px;
+  margin-top: 33px;
   width: 180px;
   text-align: center;
 }
-.about-col-2 P {
+.about-description P {
   font-size: 16px;
   line-height: 1.7;
   margin-top: 20px;
@@ -358,7 +362,7 @@ nav ul li a:hover::after {
 /* //////////////////////////////////////////////////////////////////  */
 .services-section {
   padding: 10px 10%;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 }
 .services-lists {
   display: grid;
@@ -389,7 +393,7 @@ nav ul li a:hover::after {
   font-weight: 700;
 }
 .services-list h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 25px;
 }
@@ -399,7 +403,6 @@ nav ul li a:hover::after {
   overflow: hidden;
   height: 160px;
 }
-
 .service-text.full-visible {
   height: auto;
 }
@@ -423,8 +426,8 @@ nav ul li a:hover::after {
 .contact-left {
   flex-basis: 35%;
 }
-.sub-title {
-  font-size: 32px;
+.contact-title {
+  font-size: 26px;
   margin-top: 15px;
 }
 .contact-right {
@@ -552,7 +555,6 @@ form .btn-submit {
 .error {
   border: 1px solid red;
 }
-
 #error {
   color: red;
   font-size: 0.8rem;
@@ -564,13 +566,13 @@ form .btn-submit {
 .contacts a {
   text-decoration: none;
 }
-
 textarea {
   resize: vertical;
   width: 100%;
   min-height: 50px;
   max-height: 400px;
 }
+
 /* //////////////////////////////////////////////////////////////////  */
 /* >>>>>>>>>>>>>>> FOOTER SECTION <<<<<<<<<<<<<<<  */
 /* //////////////////////////////////////////////////////////////////  */

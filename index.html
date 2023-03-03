@@ -39,7 +39,7 @@
               href="#section--2"
               onclick="closeMenu()"
               style="--clr: 2"
-              >About/MyWork</a
+              >MyWork</a
             >
           </li>
           <li>
@@ -48,13 +48,22 @@
               href="#section--3"
               onclick="closeMenu()"
               style="--clr: 3"
-              >Services</a
+              >About</a
             >
           </li>
           <li>
             <a
               class="nav__link"
               href="#section--4"
+              onclick="closeMenu()"
+              style="--clr: 4"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              href="#section--5"
               onclick="closeMenu()"
               style="--clr: 5"
               >Contact</a
@@ -70,7 +79,6 @@
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< HOME SECTION >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-
       <section class="home-section" id="section--1">
         <div class="home-details">
           <h3>Hey, My name is</h3>
@@ -92,81 +100,89 @@
       </section>
 
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <!-- <<<<<<<<<<< ABOUT SECTION >>>>>>>>>>>>>  -->
+      <!-- <<<<<<<<<<< My-WORK SECTION >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="about-section" id="section--2">
-        <div class="about-col-1">
-          <h1>My Work</h1>
-          <div class="grid image-grid">
-            <div class="grid-block">
-              <div class="tile">
-                <a class="tile-link" href="https://omnifood-alban.netlify.app/">
-                  <img
-                    class="tile-img tile-img1"
-                    src="images/omnifood.png"
-                    alt="Image"
-                  />
-                </a>
-              </div>
-            </div>
 
-            <div class="grid-block">
-              <div class="tile">
-                <a
-                  class="tile-link"
-                  href="https://hero-section-component-html.netlify.app/"
-                >
-                  <img
-                    class="tile-img tile-img2"
-                    src="images/hero.png"
-                    alt="Image"
-                  />
-                </a>
-              </div>
+      <section class="my-work-section" id="section--2">
+        <div class="my-work-title">
+          <h1>My Work</h1>
+        </div>
+        <div class="grid image-grid">
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="https://omnifood-alban.netlify.app/">
+                <img
+                  class="tile-img tile-img1"
+                  src="images/omnifood.png"
+                  alt="Image"
+                />
+              </a>
             </div>
-            <div class="grid-block">
-              <div class="tile">
-                <a class="tile-link" href="https://forkify-alban.netlify.app/">
-                  <img
-                    class="tile-img tile-img3"
-                    src="images/forkify.png"
-                    alt="Image"
-                  />
-                </a>
-              </div>
+          </div>
+          <div class="grid-block">
+            <div class="tile">
+              <a
+                class="tile-link"
+                href="https://hero-section-component-html.netlify.app/"
+              >
+                <img
+                  class="tile-img tile-img2"
+                  src="images/hero.png"
+                  alt="Image"
+                />
+              </a>
             </div>
-            <div class="grid-block">
-              <div class="tile">
-                <a class="tile-link" href="https://mapty-alban.netlify.app/">
-                  <img
-                    class="tile-img tile-img4"
-                    src="images/mapty.png"
-                    alt="Image"
-                  />
-                </a>
-              </div>
+          </div>
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="https://forkify-alban.netlify.app/">
+                <img
+                  class="tile-img tile-img3"
+                  src="images/forkify.png"
+                  alt="Image"
+                />
+              </a>
             </div>
-            <div class="grid-block">
-              <div class="tile">
-                <a class="tile-link" href="https://bankist-alban.netlify.app/">
-                  <img
-                    class="tile-img tile-img5"
-                    src="images/bankist.png"
-                    alt="Image"
-                  />
-                </a>
-              </div>
+          </div>
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="https://mapty-alban.netlify.app/">
+                <img
+                  class="tile-img tile-img4"
+                  src="images/mapty.png"
+                  alt="Image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="grid-block">
+            <div class="tile">
+              <a class="tile-link" href="https://bankist-alban.netlify.app/">
+                <img
+                  class="tile-img tile-img5"
+                  src="images/bankist.png"
+                  alt="Image"
+                />
+              </a>
             </div>
           </div>
         </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
+      </section>
+
+      <!-- ////////////////////////////////////////////////////////////////// -->
+      <!-- <<<<<<<<<<< ABOUT SECTION >>>>>>>>>>>>>  -->
+      <!-- ////////////////////////////////////////////////////////////////// -->
+      <section class="about-section" id="section--3">
+        <div class="about-description">
+          <h1 class="about-title">About Me</h1>
           <p>
             As a frontend developer, I bring more to the table than just
             technical skills. I possess strong interpersonal skills, such as
             communication, collaboration, and empathy, which are essential for
             delivering successful projects.
           </p>
+        </div>
+        <div class="about-tabs">
           <div class="tab-titles">
             <div
               class="tab-links active-link"
@@ -236,7 +252,7 @@
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< SERVICES SECTION >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="services-section" id="section--3">
+      <section class="services-section" id="section--4">
         <h1 class="service-title">My Services</h1>
 
         <div class="services-lists">
@@ -304,9 +320,9 @@
       <!-- ////////////////////////////////////////////////////////////////// -->
       <!-- <<<<<<<<<<< CONTACT >>>>>>>>>>>>>  -->
       <!-- ////////////////////////////////////////////////////////////////// -->
-      <section class="contact-section" id="section--4">
+      <section class="contact-section" id="section--5">
         <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
+          <h1 class="contact-title">Contact Me</h1>
           <address class="contacts">
             <p class="phone-number">
               <i class="bx bx-phone"></i>

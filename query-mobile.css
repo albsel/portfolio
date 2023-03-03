@@ -58,28 +58,21 @@
     display: none;
   }
   /* //////////////////////////////////////////////////////////////////  */
-  /* >>>>>>>>>>>>>>> ABOUT SECTION <<<<<<<<<<<<<<<  */
+  /* >>>>>>>>>>>>>>> MY-WORK SECTION <<<<<<<<<<<<<<<  */
   /* //////////////////////////////////////////////////////////////////  */
-  .about-section {
-    grid-template-columns: 1fr;
-    margin-bottom: 30px;
-    padding: 25px;
-    padding-top: 70px;
-  }
-  .about-col-1 {
-    margin-right: 5px;
-  }
-  .about-col-1 h1 {
+  .my-work-title h1 {
     position: absolute;
-    top: -7%;
-    left: 0;
-    right: 0;
-    font-size: 28px;
-    letter-spacing: 10px;
+    top: -2.3%;
+    left: 11%;
+    width: 220px;
+    font-size: 26px;
+    letter-spacing: 3px;
     font-weight: 600;
-    padding: 10px 20px;
     text-align: center;
     transform: rotate(0deg);
+  }
+  .grid {
+    width: 320px;
   }
   .tile-img {
     border-radius: 4px;
@@ -87,7 +80,6 @@
   .grid-block {
     width: 100%;
     min-height: 11.25rem;
-    padding: 1rem;
   }
   .image-grid {
     -webkit-transform: rotateX(0deg) rotateZ(0deg);
@@ -95,18 +87,30 @@
     -webkit-perspective: 1000px;
     perspective: 1000px;
   }
-  .about-col-2 {
+
+  /* //////////////////////////////////////////////////////////////////  */
+  /* >>>>>>>>>>>>>>> ABOUT SECTION <<<<<<<<<<<<<<<  */
+  /* //////////////////////////////////////////////////////////////////  */
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 120px;
+    padding: 10px 10%;
+  }
+  .about-description {
     border-radius: 10px;
     font-size: 24px;
     padding: 8px;
   }
-  .about-col-2 h1 {
-    font-size: 28px;
+  .about-description h1 {
+    font-size: 26px;
+    letter-spacing: 3px;
     padding: 8px;
   }
-  .about-col-2 p {
-    font-size: 12px;
-    line-height: 1.2;
+  .about-description p {
+    font-size: 16px;
+    line-height: 1.7;
     margin-top: 15px;
   }
   .tab-titles {
@@ -114,9 +118,6 @@
   }
   .tab-links {
     font-size: 14px;
-  }
-  .btn {
-    margin-bottom: 30px;
   }
 
   /* //////////////////////////////////////////////////////////////////  */
@@ -127,9 +128,9 @@
     margin-bottom: 30px;
   }
   .service-title {
+    font-size: 26px;
+    letter-spacing: 3px;
     margin-bottom: 22px;
-    font-size: 28px;
-    letter-spacing: 4px;
   }
   .services-lists {
     grid-template-columns: 1fr;
@@ -142,8 +143,9 @@
   .contact-section {
     grid-template-columns: 1fr;
   }
-  .sub-title {
-    font-size: 28px;
+  .contact-title {
+    font-size: 26px;
+    letter-spacing: 3px;
     margin-top: 15px;
   }
   .social-media a {
@@ -152,7 +154,9 @@
     margin: 60px 15px 30px 0;
     font-size: 32px;
   }
-
+  .btn {
+    margin-bottom: 30px;
+  }
   /* //////////////////////////////////////////////////////////////////  */
   /* >>>>>>>>>>>>>>> FOOTER SECTION <<<<<<<<<<<<<<<  */
   /* //////////////////////////////////////////////////////////////////  */
