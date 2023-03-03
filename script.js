@@ -12,12 +12,13 @@ const nameErrorMsg = document.getElementById("nameError");
 const emailInput = document.getElementById("email");
 const emailError = document.getElementById("emailError");
 const messageInput = document.getElementById("message");
-
 const learnMoreBtns = document.querySelectorAll(".learn-more");
 const servicesList = document.querySelector(".services-list");
 const servicesListParagraph = servicesList.querySelector(".service-text");
 const closeBtn = document.querySelectorAll(".close");
 const closeBtns = document.querySelectorAll(".close-btn");
+const scrollUpButton = document.getElementById("scroll-up-button");
+
 /*********************************************************************************************************/
 /* Expand the service text
 /*********************************************************************************************************/
@@ -224,4 +225,26 @@ messageInput.addEventListener("input", function () {
     theCount.style.fontWeight = "bold";
     messageInput.value = messageInput.value.substring(0, 300); // restrict user from typing more than 300 characters
   }
+});
+
+/*********************************************************************************************************/
+/* Scroll UP
+/*********************************************************************************************************/
+window.addEventListener("scroll", function () {
+  // Check if the user has scrolled to the bottom of the page
+  if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+    // If the user has scrolled to the bottom, show the scroll-up button
+    scrollUpButton.style.display = "block";
+  } else {
+    // If the user hasn't scrolled to the bottom, hide the scroll-up button
+    scrollUpButton.style.display = "none";
+  }
+});
+
+scrollUpButton.addEventListener("click", function () {
+  // Scroll to the top of the page
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
