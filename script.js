@@ -116,6 +116,8 @@ const closeMenu = function () {
   sideMenu.style.right = "-230px";
 };
 
+document.addEventListener("click", closeMenuOnClickOutside);
+
 /*********************************************************************************************************/
 /* Input web app URL for contact form*/
 /*********************************************************************************************************/

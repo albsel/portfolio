@@ -4,8 +4,9 @@
   /* //////////////////////////////////////////////////////////////////  */
   .profile {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
+    margin-top: -25px;
   }
   .profile img {
     width: 120px;
@@ -30,6 +31,8 @@
     display: block;
     font-size: 25px;
     letter-spacing: 2px;
+    margin-left: -15px;
+    margin-top: -15px;
   }
   nav ul {
     background: #ff004f;
