@@ -19,6 +19,9 @@ header {
   background-size: cover;
   background-position: center;
 }
+.profile {
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;

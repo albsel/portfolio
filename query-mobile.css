@@ -2,6 +2,27 @@
   /* //////////////////////////////////////////////////////////////////  */
   /* >>>>>>>>>>>>>>> HEADER <<<<<<<<<<<<<<<  */
   /* //////////////////////////////////////////////////////////////////  */
+  .profile {
+    display: block;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .profile img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  .profile-name {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  .profile-job-title {
+    text-align: center;
+  }
+  #side-menu {
+    background: linear-gradient(to bottom, #252020, #ff004f);
+  }
   .logo {
     font-size: 18px;
   }
@@ -26,11 +47,16 @@
     margin: 25px;
     margin-bottom: 45px;
   }
-  nav ul .bx {
+  nav ul .bx-window-close {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+  .nav__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   /* //////////////////////////////////////////////////////////////////  */
