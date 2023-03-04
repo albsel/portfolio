@@ -610,7 +610,7 @@ textarea {
   color: #ff004f;
 }
 
-.tooltip {
+/* .tooltip {
   display: none;
   position: absolute;
   background-color: #ff004f;
@@ -624,7 +624,7 @@ textarea {
   top: -40px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 #scroll-up-button:hover {
   cursor: pointer;
 }

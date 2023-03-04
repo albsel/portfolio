@@ -232,18 +232,18 @@ messageInput.addEventListener("input", function () {
 /*********************************************************************************************************/
 /* Scroll UP
 /*********************************************************************************************************/
-window.addEventListener("scroll", function () {
-  // Always show the scroll-up button
-  scrollUpButton.style.display = "block";
-});
+// window.addEventListener("scroll", function () {
+//   // Always show the scroll-up button
+//   scrollUpButton.style.display = "block";
+// });
 
-scrollUpButton.addEventListener("click", function () {
-  // Scroll to the top of the page
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
+// scrollUpButton.addEventListener("click", function () {
+//   // Scroll to the top of the page
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// });
 
 /*********************************************************************************************************/
 /* Scroll position on TOP on page refresh
