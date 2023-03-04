@@ -18,7 +18,37 @@ const servicesListParagraph = servicesList.querySelector(".service-text");
 const closeBtn = document.querySelectorAll(".close");
 const closeBtns = document.querySelectorAll(".close-btn");
 const scrollUpButton = document.getElementById("scroll-up-button");
+const skills = document.getElementById("about-skills");
+const progressBars = document.querySelectorAll(".progress-bar");
 
+/*********************************************************************************************************/
+/* Skills progress bar
+/*********************************************************************************************************/
+const showProgress = function () {
+  progressBars.forEach((progressBar) => {
+    const value = progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = `${value}%`;
+  });
+};
+
+const hideProgress = function () {
+  progressBars.forEach((p) => {
+    p.style.opacity = 0;
+    p.style.width = 0;
+  });
+};
+
+window.addEventListener("scroll", () => {
+  const sectionPos = skills.getBoundingClientRect().top;
+  const screenPos = window.innerHeight;
+
+  if (sectionPos < screenPos) {
+    showProgress();
+  } else {
+    hideProgress();
+  }
+});
 /*********************************************************************************************************/
 /* Expand the service text
 /*********************************************************************************************************/
@@ -115,8 +145,6 @@ const openMenu = function () {
 const closeMenu = function () {
   sideMenu.style.right = "-230px";
 };
-
-document.addEventListener("click", closeMenuOnClickOutside);
 
 /*********************************************************************************************************/
 /* Input web app URL for contact form*/
