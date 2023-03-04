@@ -464,6 +464,10 @@ nav ul li a:hover::after {
 .contact-right {
   flex-basis: 60%;
 }
+.get-in-touch {
+  margin-top: 12px;
+  font-size: 26px;
+}
 .contact-left p {
   margin-top: 30px;
 }
@@ -536,6 +540,10 @@ nav ul li a:hover::after {
 .phone-number {
   display: flex;
   align-items: center;
+  box-shadow: 0 0 10px rgba(187, 11, 11, 0.3);
+  padding: 7px 12px;
+  width: 230px;
+  border-radius: 10px;
 }
 .bx-phone {
   margin-right: 10px;
@@ -543,6 +551,10 @@ nav ul li a:hover::after {
 .email-adresse {
   display: flex;
   align-items: center;
+  box-shadow: 0 0 10px rgba(187, 11, 11, 0.3);
+  padding: 7px 12px;
+  width: 300px;
+  border-radius: 10px;
 }
 .bx-send {
   margin-right: 10px;
@@ -644,4 +656,11 @@ textarea {
   background: #473d3d;
   font-weight: 300;
   color: #fff;
+}
+.bxs-heart {
+  color: #ff004f;
+}
+.footer-name {
+  color: #ff004f;
+  font-weight: 700;
 }
