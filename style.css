@@ -141,8 +141,9 @@ nav ul li a:hover::after {
 }
 .profile-image img {
   width: 100%;
-  max-width: 450px;
+  max-width: 470px;
   border-radius: 25px;
+  margin-top: -150px;
 }
 @keyframes slideBottom {
   0% {
