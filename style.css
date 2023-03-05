@@ -497,9 +497,9 @@ nav ul li a:hover::after {
   bottom: 0;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
   transition: height 0.9s;
 }
 .list:hover .layer {
