@@ -500,8 +500,7 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  padding: 0 40px;
+  padding: 0 30px;
   transition: height 0.9s;
 }
 .list:hover .layer {
