@@ -498,8 +498,11 @@ nav ul li a:hover::after {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  padding: 0 10px;
+  padding: 0 12px;
   transition: height 0.9s;
+
+  font-size: 12px;
+  line-height: 1.7;
 }
 .list:hover .layer {
   height: 100%;
@@ -515,11 +518,7 @@ nav ul li a:hover::after {
   margin-bottom: 25px;
 }
 .service-text {
-  font-size: 12px;
-  line-height: 1.7;
-  overflow: hidden;
-  height: 200px;
-  padding: 12px 10px;
+  margin-top: 10px;
 }
 
 /* //////////////////////////////////////////////////////////////////  */
