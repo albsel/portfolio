@@ -498,15 +498,13 @@ nav ul li a:hover::after {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 10px;
   transition: height 0.9s;
 }
 .list:hover .layer {
   height: 100%;
 }
-
 .list i {
   font-size: 28px;
   margin-bottom: 20px;
