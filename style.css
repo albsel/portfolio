@@ -436,6 +436,9 @@ nav ul li a:hover::after {
 .bxl-bootstrap {
   color: rgb(102, 9, 102);
 }
+.bxl-firebase {
+  color: rgb(145, 83, 9);
+}
 
 /* //////////////////////////////////////////////////////////////////  */
 /* >>>>>>>>>>>>>>> SERVICES SECTION <<<<<<<<<<<<<<<  */
@@ -450,13 +453,13 @@ nav ul li a:hover::after {
   column-gap: 25px;
 }
 .service-title {
-  margin-bottom: 25px;
   font-size: 26px;
   letter-spacing: 4px;
 }
 .services-list {
   width: 100%;
   height: auto;
+  margin-top: 25px;
   background: #473d3d;
   border-radius: 7px;
   padding: 40px;
@@ -478,20 +481,20 @@ nav ul li a:hover::after {
   font-size: 14px;
 }
 .services-list i {
-  font-size: 48px;
-  margin-bottom: 25px;
+  font-size: 28px;
+  margin-bottom: 20px;
   font-weight: 700;
 }
 .services-list h2 {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 .service-text {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.7;
   overflow: hidden;
-  height: 160px;
+  height: 200px;
 }
 .service-text.full-visible {
   height: auto;
