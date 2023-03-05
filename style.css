@@ -404,7 +404,7 @@ nav ul li a:hover::after {
 }
 .progress .progress-bar {
   width: 0%;
-  opacity: o;
+  opacity: 0;
   height: 100%;
   background-color: #15430d;
   border-radius: 10px;
@@ -456,36 +456,64 @@ nav ul li a:hover::after {
   font-size: 26px;
   letter-spacing: 4px;
 }
-.services-list {
+.list-description {
+  font-size: 16px;
+  margin-top: 40px;
+}
+.list-icon-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.list-icon-title i {
+  font-size: 32px;
+}
+.list {
   width: 100%;
   height: auto;
-  margin-top: 25px;
-  background: #473d3d;
-  border-radius: 7px;
-  padding: 40px;
+  margin-top: 14px;
+
+  border-radius: 12px;
   transition: ease-in-out 0.5s;
+  position: relative;
 }
-.services-list:hover {
+.list:hover {
   transform: translateY(-12px);
   cursor: pointer;
-  background-color: #ff004f;
 }
-.services-list:hover .learn-more {
-  color: #252020;
-  font-weight: 700;
-  font-size: 14px;
+.list img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  border-radius: 10px;
 }
-.services-list:hover .close-btn {
-  color: #252020;
-  font-weight: 700;
-  font-size: 14px;
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0 40px;
+  transition: height 0.9s;
 }
-.services-list i {
+.list:hover .layer {
+  height: 100%;
+}
+
+.list i {
   font-size: 28px;
   margin-bottom: 20px;
   font-weight: 700;
 }
-.services-list h2 {
+.list h2 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 25px;
@@ -495,16 +523,7 @@ nav ul li a:hover::after {
   line-height: 1.7;
   overflow: hidden;
   height: 200px;
-}
-.service-text.full-visible {
-  height: auto;
-}
-.services-list a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
+  padding: 12px 10px;
 }
 
 /* //////////////////////////////////////////////////////////////////  */
